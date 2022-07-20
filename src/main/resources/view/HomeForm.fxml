@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="735.0" prefWidth="984.0" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <ImageView fx:id="imgLogo" fitHeight="71.0" fitWidth="279.0" layoutX="8.0" layoutY="8.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/new-logo.c0df6a3a377bc58f49cc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <FlowPane alignment="CENTER" layoutX="283.0" layoutY="652.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane id="imgContainer" focusTraversable="true" layoutX="895.0" layoutY="43.0" prefHeight="52.0" prefWidth="67.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="43.0">
+         <children>
+            <ImageView id="imgSysLogin" fx:id="pneLogin" fitHeight="57.0" fitWidth="88.0" focusTraversable="true" layoutY="20.0" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked">
+               <image>
+                  <Image url="@../images/lock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="130.0" layoutY="559.0" prefHeight="133.0" prefWidth="984.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/iocLogo.jpeg" />
+               </image></ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../images/Logos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="102.0">
+               <image>
+                  <Image url="@../images/png-transparent-car-fuel-pump-fuel-dispenser-gas-station-s-text-rectangle-diesel-fuel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <AnchorPane fx:id="pneContainer" layoutX="6.0" layoutY="138.0" prefHeight="421.0" prefWidth="978.0" />
+   </children>
+</AnchorPane>
